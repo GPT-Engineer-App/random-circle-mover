@@ -27,7 +27,7 @@ const Index = () => {
       circles.map((circle) => {
         if (circle.id === id) {
           const angle = Math.random() * 2 * Math.PI; // Random angle
-          const distance = 200; // 200 pixels away
+          const distance = Math.random() * 70 + 30;
           return {
             ...circle,
             x: circle.x + Math.cos(angle) * distance,
@@ -42,7 +42,7 @@ const Index = () => {
   return (
     <Flex wrap="wrap" justifyContent="center" alignItems="center" height="100vh">
       {circles.map((circle) => (
-        <Box key={circle.id} onMouseOver={() => handleMouseOver(circle.id)} position="absolute" top={circle.y} left={circle.x} width="10px" height="10px" borderRadius="50%" backgroundColor="blue" cursor="pointer" />
+        <Box key={circle.id} onMouseOver={() => handleMouseOver(circle.id)} position="absolute" top={circle.y} left={circle.x} width="20px" height="20px" borderRadius="50%" backgroundColor="blue" cursor="pointer" />
       ))}
     </Flex>
   );
