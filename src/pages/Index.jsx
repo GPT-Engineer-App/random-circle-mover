@@ -30,6 +30,8 @@ const Index = () => {
           const distance = Math.random() * 70 + 30;
           return {
             ...circle,
+            width: circle.width * 2,
+            height: circle.height * 2,
             x: circle.x + Math.cos(angle) * distance,
             y: circle.y + Math.sin(angle) * distance,
           };
