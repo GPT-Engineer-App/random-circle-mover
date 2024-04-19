@@ -14,8 +14,8 @@ const Index = () => {
       for (let j = 0; j < numCircles; j++) {
         newCircles.push({
           id: `${i}-${j}`,
-          x: Math.random() * window.innerWidth,
-          y: Math.random() * window.innerHeight,
+          x: Math.random() * 1000,
+          y: Math.random() * 1000,
         });
       }
     }
