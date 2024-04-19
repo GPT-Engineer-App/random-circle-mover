@@ -7,7 +7,7 @@ const Index = () => {
   const [circles, setCircles] = useState([]);
 
   useEffect(() => {
-    const numGroups = Math.floor(Math.random() * 5) + 1; // 1 to 5 groups
+    const numGroups = 5;
     let newCircles = [];
     for (let i = 0; i < numGroups; i++) {
       const numCircles = Math.floor(Math.random() * 5) + 1; // 1 to 5 circles per group
